@@ -12,7 +12,7 @@ dotenv.config()
 
 const app = express()
 app.use(cors({
-    origin:process.env.FRONTEND_URL,
+    origin:https://voice-ai-frontend-five.vercel.app,
     credentials:true
 }))
 const port = process.env.PORT || 5000;
