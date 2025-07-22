@@ -12,7 +12,7 @@ dotenv.config()
 
 const app = express()
 app.use(cors({
-    origin:https://voice-ai-frontend-five.vercel.app,
+    origin:process.env.MONGODB_URL,
     credentials:true
 }))
 const port = process.env.PORT || 5000;
